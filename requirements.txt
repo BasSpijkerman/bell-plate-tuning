@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+ipywidgets
+gmsh==4.15.2
+scikit-fem==12.0.1
+meshio
+voila
