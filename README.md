@@ -5,6 +5,15 @@ plates** (struck metal idiophones) with triangular edge incuts. 3D-solid free–
 analysis: gmsh mesh → scikit-fem P2 tetrahedra → eigenvalue solve → matplotlib mode shapes,
 driven from a small in-notebook control panel.
 
+## What the inputs mean
+
+![Labelled diagram of the plate and notch parameters](param_diagram.png)
+
+Plate **Length × Width × Thickness**; each incut is `edge, pos, base, depth` (mm) — `pos` is
+measured from the lower-left corner along the chosen edge, `depth` points into the plate, and
+notches are cut through the full thickness. (This diagram also appears inside the notebook,
+above the control panel.)
+
 ## Run it in your browser (no install)
 
 **App view** (just the control panel + results, no code — best for sharing):
@@ -30,3 +39,4 @@ jupyter lab bell_plate_fem.ipynb   # then Run All, and use the control panel
 - `bell_plate_fem.ipynb` — the notebook (analysis + control panel).
 - `requirements.txt` — Python dependencies (used by Binder and local installs).
 - `apt.txt` — system libraries gmsh needs on the Binder (Ubuntu) image.
+- `param_diagram.png` — labelled diagram of the input parameters.
