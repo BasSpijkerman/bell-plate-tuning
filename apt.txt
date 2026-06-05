@@ -1,5 +1,8 @@
+libgl1
 libglu1-mesa
 libxrender1
 libxcursor1
 libxft2
 libxinerama1
+libxext6
+libfontconfig1
